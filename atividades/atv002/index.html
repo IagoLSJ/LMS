@@ -1,0 +1,237 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <title>Brasileirão Serie A</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        h1 {
+            width: 100%;
+            background-color: #06AA48;
+            text-transform: uppercase;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
+            color: #f2f2f2;
+            padding: 0 3px;
+
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            list-style: none;
+            padding: 0;
+            gap: 10px;
+        }
+
+        .menu li {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .tabela {
+            margin-top: 60px;
+        }
+
+        .tabela>h2 {
+            margin-bottom: 10px;
+            margin-left: 8px;
+            text-transform: uppercase
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            text-transform: uppercase
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .formulario {
+            display: grid;
+            justify-content: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+
+        }
+
+        article>form {
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        #radio,
+        #checkbox {
+            justify-content: start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+         <!--Header da pagina-->
+        <header>
+            <h1>brasileirão série a</h1>
+            <nav class="links">
+                <ul class="menu">
+                    <li class="classificacao"><a
+                            href="https://www.sofascore.com/pt/torneio/futebol/brazil/brasileiro-serie-a/325#48982">Classificações</a>
+                    </li>
+                    <li class="estatisiticas"><a
+                            href="https://www.academiadasapostasbrasil.com/stats/competition/brasil/26/NR2zmkLnBQ08o/statistics">ESTATÍSTICAS</a>
+                    </li>
+                    <li class="simulacao"><a
+                            href="https://interativos.ge.globo.com/futebol/brasileirao-serie-a/especial/simulador-do-brasileirao-2023"><img
+                                src="sinais-vitais.png" alt=""></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+         <!-- Seção com a tabela-->
+        <section>
+            <div class="tabela">
+                <h2>Rodada 19º</h2>
+                <table>
+                    <tr>
+                        <th>Rodada</th>
+                        <th>Time Mandante</th>
+                        <th>Placar</th>
+                        <th>Time Visitante</th>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td><strong>Botafogo</strong></td>
+                        <td>3 - 1</td>
+                        <td>Internacional</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td><strong>Atlético-MG</strong></td>
+                        <td>1 - 0</td>
+                        <td>Bahia</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>América-MG</td>
+                        <td>0 - 1</td>
+                        <td><strong>Goiás</strong></td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td><strong>Corinthians</strong></td>
+                        <td>3 - 1</td>
+                        <td>Coritiba</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+
+                        <td><strong>Grêmio</strong></td>
+                        <td>2 - 1</td>
+                        <td>Fluminense</td>
+
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>Flamengo</td>
+                        <td><strong>1 - 1</strong></td>
+                        <td>São Paulo</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td><strong>Fortaleza</strong></td>
+                        <td>4 - 0</td>
+                        <td>Santos</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td><strong>Palmeiras</strong></td>
+                        <td>1 - 0</td>
+                        <td>Cruzeiro</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td>RB Bragantino</td>
+                        <td>1 - 1</td>
+                        <td><strong>Vasco</strong></td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td><strong>Athletico</strong></td>
+                        <td>3 - 1</td>
+                        <td>Cuiabá</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+         <!--Nova article com o formulario -->
+        <article class="formulario">
+            <form action="https://w3schools.com/action_page.php" method="get">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="" maxlength="15">
+                <input type="text" value="apenas leia" readonly>
+                <label for="username">Escolha um número entre 25000 - 30000</label>
+                <input type="number" name="number" value="25000" min="25000" max="30000">
+                   <!--Radio-->
+                <article id="radio">
+                    <label >Qual a sua idade:</label><br>
+                    <input type="radio" id="idade" name="idade" value="18-25">
+                    <label for="idade">18-25</label>
+                    <input type="radio" id="idade" name="idade" value="26-30">
+                    <label for="idade">26-30</label>
+                    <input type="radio" id="idade" name="idade" value="31-35">
+                    <label for="idade">31-35</label>
+                </article>
+                <!--Checkbox-->
+                <article id="checkbox">
+                    <label>Escolha 1 ou mais cores:</label><br>
+                    <input type="checkbox" name="Vermelho" value="Vermelho">
+                    <label for="Vermelho">Vermelho</label>
+                    <input type="checkbox" name="Preto" value="Preto">
+                    <label for="Preto">Preto</label>
+                    <input type="checkbox" name="Branco" value="Branco">
+                    <label for="Branco">Branco</label>
+                </article>
+                <input type="submit" value="enviar">
+            </form>
+        </article>
+    </div>
+
+</body>
+
+</html>
