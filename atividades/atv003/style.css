@@ -11,14 +11,11 @@ nav {
     align-items: center;
     justify-content: end;
 }
-.menu {
-    list-style: none;
-}
 
-.menu  li {
+
+.menu li {
     display: inline;
     margin-right: 20px;
-    position: relative;
 }
 
 .menu a {
@@ -34,9 +31,13 @@ nav {
 }
 
 
-.dropdown-menu:hover {
-    display: flex;
-    flex-direction: column;
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
     position: absolute;
     width: 300px;
     background-color: #333;
@@ -45,8 +46,9 @@ nav {
     left: 0;
 }
 
-.dropdown .dropdown-menu {
-    display: none;
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
 }
 
 .dropdown-menu li {
@@ -56,13 +58,13 @@ nav {
 .dropdown-menu a {
     color: #fff;
     text-decoration: none;
+    font-weight: normal;
     font-size: 14px;
 }
 
 .dropdown-menu a:hover {
     color: #ff6600; 
 }
-
 article{
     margin:8px ;
     padding: 8px;
